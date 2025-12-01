@@ -4,19 +4,19 @@
 
 using namespace std;
 
-int findMax(const vector<int>& numbers) {
+int findMin(const vector<int>& numbers) {
     if (numbers.empty()) {
-        cerr << "Список пуст. Возвращаю минимальное значение int." << endl;
-        return INT_MIN;
+        cerr << "Список пуст. Возвращаю максимальное значение int." << endl;
+        return INT_MAX;
     }
     
-    int max = numbers[0];
+    int min = numbers[0];
     for (int num : numbers) {
-        if (num > max) {
-            max = num;
+        if (num < min) {
+            min = num;
         }
     }
-    return max;
+    return min;
 }
 
 int main() {
@@ -30,6 +30,6 @@ int main() {
         cin >> arr[i];
     }
 
-    cout << "Максимум в списке: " << findMax(arr) << endl;
+    cout << "Минимум в списке: " << findMin(arr) << endl;
     return 0;
 }
