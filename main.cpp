@@ -4,7 +4,6 @@
 
 using namespace std;
 
-// Функция для нахождения максимума в векторе целых чисел
 int findMax(const vector<int>& numbers) {
     if (numbers.empty()) {
         cerr << "Список пуст. Возвращаю минимальное значение int." << endl;
@@ -21,8 +20,16 @@ int findMax(const vector<int>& numbers) {
 }
 
 int main() {
-    // Пример использования функции findMax
-    vector<int> arr = {1, 5, 3, 9, 2};
+    int n;
+    cout << "Введите количество элементов в массиве: ";
+    cin >> n;
+
+    vector<int> arr(n);
+    cout << "Введите элементы массива: ";
+    for (int i = 0; i < n; ++i) {
+        cin >> arr[i];
+    }
+
     cout << "Максимум в списке: " << findMax(arr) << endl;
     return 0;
 }
