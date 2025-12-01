@@ -7,4 +7,3 @@
 ### Сигнатура
 ```cpp
 int findMax(const vector<int>& numbers);
-
