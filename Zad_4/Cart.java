@@ -57,3 +57,4 @@ public class Cart {
         return new ArrayList<>(products); // Возвращаем копию для безопасности
     }
 }
+
