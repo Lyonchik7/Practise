@@ -1,5 +1,7 @@
 package org.example;
 
+// Импортируем все классы из пакета figures
+// import figures.*; - импортирует Circle, Rectangle, Triangle, Figure
 import figures.*;
 
 public class Main {
