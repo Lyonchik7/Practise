@@ -10,6 +10,8 @@ public class Circle extends Figure {
         this.radius = radius;
     }
 
+// @Override - аннотация, указывающая, что метод переопределяет метод родителя
+// Компилятор проверяет, существует ли такой метод в родительском классе
     @Override
     public double calculateArea() {
         return Math.PI * radius * radius;
@@ -22,3 +24,4 @@ public class Circle extends Figure {
 
     public double getRadius() { return radius; }
 }
+
