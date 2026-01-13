@@ -52,8 +52,9 @@ public class Cart {
         System.out.println("===============\n");
     }
 
-    // Дополнительный метод для получения списка продуктов (опционально)
+    // Дополнительный метод для получения списка продуктов 
     public ArrayList<Product> getProducts() {
         return new ArrayList<>(products); // Возвращаем копию для безопасности
     }
 }
+
