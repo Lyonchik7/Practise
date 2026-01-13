@@ -49,7 +49,6 @@ public class Cart {
             }
             System.out.println("Итого: " + getTotal() + " руб.");
         }
-        System.out.println("===============\n");
     }
 
     // Дополнительный метод для получения списка продуктов 
@@ -57,5 +56,6 @@ public class Cart {
         return new ArrayList<>(products); // Возвращаем копию для безопасности
     }
 }
+
 
 
