@@ -40,7 +40,7 @@ public class Cart {
 
     // Вывести содержимое корзины
     public void printCart() {
-        System.out.println("\n=== Корзина ===");
+        System.out.println("\n Корзина ");
         if (products.isEmpty()) {
             System.out.println("Корзина пуста");
         } else {
@@ -57,4 +57,5 @@ public class Cart {
         return new ArrayList<>(products); // Возвращаем копию для безопасности
     }
 }
+
 
